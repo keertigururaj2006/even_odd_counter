@@ -1,7 +1,7 @@
 import sys
 
-if len(sys.argv) > 5:
-    print("Usage: python even_odd.py <num1> <num2> <num3> <num4> <num5> ")
+if len(sys.argv) < 2:
+    print("Usage: python even_odd.py <num1> <num2> <num3> ...")
     sys.exit(1)
 
 numbers = list(map(int, sys.argv[1:]))
